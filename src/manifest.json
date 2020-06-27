@@ -1,0 +1,16 @@
+{
+  "manifest_version": 2,
+  "name": "Ŝlosilo",
+  "version": "0.1",
+  "description": "Read paywalled articles by opening them in your university-provided news archive.",
+  "content_scripts": [
+    {
+      "matches": [
+        "*://www.sueddeutsche.de/*"
+      ],
+      "js": [
+        "slosilo.js"
+      ]
+    }
+  ]
+}
